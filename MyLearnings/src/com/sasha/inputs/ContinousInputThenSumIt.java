@@ -7,7 +7,7 @@ public class ContinousInputThenSumIt {
 	  public static void main(String[] args) {
 
 	    // Initialise scanner object to take input
-	    Scanner input = new Scanner( System.in );
+	    Scanner scanner = new Scanner( System.in );
 	    
 	    // Initialize sum to 0
 	    int sum = 0;
@@ -16,10 +16,10 @@ public class ContinousInputThenSumIt {
 	    // If anything else is entered then sum all numbers given and exit
 	    
 	    System.out.println("Enter number: ");
-	    while ( input.hasNextInt() ) {
+	    while ( scanner.hasNextInt() ) {
 
 	      // Read int value
-	      int number = input.nextInt();
+	      int number = scanner.nextInt();
 	      sum += number;
 
 	      System.out.println("Enter number: ");
